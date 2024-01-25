@@ -1,3 +1,3 @@
-# CMP 431 - Mobile Programmin for Android Devices
+# CMP 431 - Mobile Programming for Android Devices
 
 Class exercises and snippets
