@@ -1,12 +1,43 @@
-class Mansion : House() {
-
+// a Mansion "is-a" House
+// a Mansion "has-a" backyard
+// a Mansion "has-a" pool
+// a Mansion "has-a" tax implications
+class Mansion : House(), TaxInterface, BackyardInterface, PoolInterface {
+  override val backyard: Boolean = true
+  override val pool: Boolean = true
+  override var tax: Double = 40000.0
+  override fun calculateTax(): Double {
+    return tax * 0.40
+  }
 }
+
+abstract class Building {
+  abstract val address: String
+  abstract val color: String
+  abstract val price: Double
+}
+
+// when talking about interfaces, we use "implements" keyword to say that the class implements the interface
+interface TaxInterface {
+  var tax: Double
+  fun calculateTax(): Double
+}
+
+interface BackyardInterface {
+  val backyard: Boolean
+} 
+
+interface PoolInterface {
+  val pool: Boolean
+}
+
+// a House "is-a" Building
 // a class is a blueprint for creating objects
 // it describes the properties and behaviors of an object
-open class House(val address: String = "123 Main St", val color: String = "White", val price: Double = 100000.0) {
+open class House(override val address: String = "123 Main St", override val color: String = "White", override val price: Double = 100000.0): Building(), TaxInterface {
   // constructor is a special function that is called when an object is created
   // it is used to initialize the object
-  val tax: Double
+  override var tax: Double = 10000.0
   val taxValue: String
     get() {
       return "Your taxes are: $tax"
@@ -19,7 +50,7 @@ open class House(val address: String = "123 Main St", val color: String = "White
     tax = price * 0.10
   }
 
-  fun calculateTax(): Double {
+  override fun calculateTax(): Double {
     return price * 0.10
   }
 
@@ -28,6 +59,15 @@ open class House(val address: String = "123 Main St", val color: String = "White
   //   println("constructor with parameter called")
   // }
 
+}
+
+// Extending Functions
+fun Mansion.isPartyHouse(): Boolean {
+  return this.backyard && this.pool
+}
+
+fun String.Upper(): String {
+  return this.toUpperCase()
 }
 
 // this is main function
@@ -51,5 +91,17 @@ fun main() {
   val house3 = House(price = 100.23)
   println(house3.address)
   println(house3.taxValue)
+
+  println("---Abstract/Interfaces------")
+
+  val mansion = Mansion()
+  println(mansion.toString())
+  println(mansion.address)
+  println(mansion.taxValue)
+
+  println("-----Extending Functions--------")
+  println("Is the mansion a party house? ${mansion.isPartyHouse()}")
+  println("Hello".Upper())
+
 }
 
