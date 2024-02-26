@@ -1,25 +1,25 @@
----
-author: Hendrix Tavarez
-fontfamily: helvet
-geometry: margin=2cm
-linkcolor: PineGreen
-header-includes:
-\hypersetup{
-    colorlinks=true,
-    urlcolor=PineGreen,
-    citecolor=PineGreen,
-}
-\usepackage{fancyhdr}
-\usepackage{caption}
-\captionsetup[figure]{
-    name=,
-    labelsep=none,
-    labelformat=empty
-}
-\pagestyle{empty}
-\pagestyle{fancy}
----
-
+<!-- --- -->
+<!-- author: Hendrix Tavarez -->
+<!-- fontfamily: helvet -->
+<!-- geometry: margin=2cm -->
+<!-- linkcolor: PineGreen -->
+<!-- header-includes: -->
+<!-- \hypersetup{ -->
+<!--     colorlinks=true, -->
+<!--     urlcolor=PineGreen, -->
+<!--     citecolor=PineGreen, -->
+<!-- } -->
+<!-- \usepackage{fancyhdr} -->
+<!-- \usepackage{caption} -->
+<!-- \captionsetup[figure]{ -->
+<!--     name=, -->
+<!--     labelsep=none, -->
+<!--     labelformat=empty -->
+<!-- } -->
+<!-- \pagestyle{empty} -->
+<!-- \pagestyle{fancy} -->
+<!-- --- -->
+<!---->
 # Project 1: Art Space
 
 
