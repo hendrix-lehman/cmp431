@@ -1,3 +1,28 @@
+---
+author: Hendrix Tavarez 
+fontfamily: helvet
+geometry: margin=2cm
+linkcolor: PineGreen
+header-includes: |
+	\hypersetup{
+      colorlinks=true,
+	    urlcolor=PineGreen,
+	    citecolor=PineGreen,
+	}
+  \usepackage{fancyhdr}
+	\usepackage{caption}
+	\captionsetup[figure]{
+      name=,
+      labelsep=none,
+      labelformat=empty}
+	\pagestyle{empty}
+    \pagestyle{fancy}
+    \fancyhead[LE,RO]{Your cool-looking name}
+	\fancyhead[LO,RE]{\it Report title}
+    \fancyfoot[LE,RO]{\thepage}
+	\fancyfoot[C]{}
+	\renewcommand{\familydefault}{\sfdefault}
+---
 # Project 1: Art Space
 
 
@@ -24,7 +49,7 @@ The code snippet below are located in the MainActivity.kt file
 
 | Home Page Code     | Artist Page Code       |
 |-----------------|--------------------|
-| ![Home Page code](./assets/homepage-code.png) | ![Artist Page code](./assets/artistpage-code.png) |
+| ![Home Page code](./assets/homepage-code.png){ width=150 margin=auto } | ![Artist Page code](./assets/artistpage-code.png){ width=150 margin=auto } |
 
 
 ## Description
@@ -39,7 +64,7 @@ To navigate back to the collection, users can select the "Back" button.
 
 | Home Page       |       Artist Page  (top)      |      Artist Page (bottom) |
 |-----------------|-------------------------------|------------------------|
-| ![Home Page image](./assets/homepage.png) | ![Artist Page top](./assets/artistpage-1.png) | ![Artist Page top](./assets/artistpage-2.png) |
+| ![Home Page image](./assets/homepage.png){ width=150 margin=auto } | ![Artist Page top](./assets/artistpage-1.png){ width=150 margin=auto } | ![Artist Page top](./assets/artistpage-2.png){ width=150 margin=auto } |
 
 ## Layout
 
@@ -61,6 +86,6 @@ The Artist Page is broken down into smaller sections as follow:
 
 | Home Page       | Artist Page        |
 |-----------------|--------------------|
-| ![Home Page layout](./assets/homepage-layout.png) | ![Artist Page layout](./assets/artistpage-layout.png) |
+| ![Home Page layout](./assets/homepage-layout.png){ width=150 margin=auto } | ![Artist Page layout](./assets/artistpage-layout.png){ width=150 margin=auto } |
 
 
