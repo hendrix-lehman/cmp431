@@ -20,6 +20,8 @@ After unzipping the project zip file, please find the project directory here:
 $ cd cmp431-main/AssignmentProjects/ArtSpace 
 ```
 
+The code snippet below are located in the MainActivity.kt file
+
 | Home Page Code     | Artist Page Code       |
 |-----------------|--------------------|
 | ![Home Page code](./assets/homepage-code.png) | ![Artist Page code](./assets/artistpage-code.png) |
