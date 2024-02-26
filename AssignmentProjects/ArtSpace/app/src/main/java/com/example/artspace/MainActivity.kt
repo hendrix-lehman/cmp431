@@ -69,8 +69,10 @@ fun ArtistPage(navController: NavController) {
   val id = navController.currentBackStackEntry?.arguments?.getInt("id") ?: 0
   val art = DataSource.arts[id]
 
+  // ARTIST PAGE section A
   // TODO: 1. Artist Profile including image, name, and info (birthplace, and years alive)
 
+  // ARTIST PAGE section B
   // TODO: 2  Artist bio
 
   // <--- Safely REMOVE the following code and ADD your code here --->
@@ -78,6 +80,8 @@ fun ArtistPage(navController: NavController) {
 
   // DO NOT MODIFY THE FOLLOWING CODE
   // You can use the following code to navigate to the previous screen:
+  // ARTIST PAGE section C
+  // TODO: 3 (optional) place the code below in the proper Row or Column layout
   Button(onClick = {
     navController.navigate(Screen.Home.route + "/$id")
   }) {
@@ -93,8 +97,8 @@ fun ArtWall(
   artDescriptionId: Int,
   navController: NavController,
 ) {
-  // See https://developer.android.com/static/codelabs/basic-android-kotlin-compose-art-space/img/ab430785fcded354_960.png
-  // for the image of the artwork. This is section A denoted in the image.
+
+  // HOME PAGE section A
 
   // TODO: 1. Add image of artwork
 
@@ -108,8 +112,8 @@ fun ArtWall(
 
 @Composable
 fun ArtDescriptor(artTitleId: Int, artistId: Int, artYearId: Int) {
-  // See https://developer.android.com/static/codelabs/basic-android-kotlin-compose-art-space/img/ab430785fcded354_960.png
-  // for the image of the artwork. This is section B denoted in the image.
+
+  // HOME PAGE section B
 
   // TODO: 1. Add title of artwork
 
@@ -122,8 +126,8 @@ fun ArtDescriptor(artTitleId: Int, artistId: Int, artYearId: Int) {
 
 @Composable
 fun DisplayController(current: Int, move: (Int) -> Unit) {
-  // See https://developer.android.com/static/codelabs/basic-android-kotlin-compose-art-space/img/ab430785fcded354_960.png
-  // for the image of the artwork. This is section C denoted in the image.
+
+  // HOME PAGE section C
 
   // TODO: 1. Add a button to navigate to the previous artwork
 
