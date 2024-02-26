@@ -1,3 +1,5 @@
+<!-- used to created pdf file -->
+<!-- $ pandoc README.md -V geometry:a4paper,margin=2cm -o project1.pdf --lua-filter ~/Temp/linebreaks.lua -->
 <!-- --- -->
 <!-- author: Hendrix Tavarez -->
 <!-- fontfamily: helvet -->
@@ -25,24 +27,27 @@
 
 ## To be completed 
 
-Read the project description, layout details and complete the all TODO section using the information below.
+Read the project description, layout details and complete all "TODO" sections using the information below.
 
-The download the code to complete your assignment, you can use these git commands:
+To download the code to complete your assignment, you can use these git commands:
 
 ```
 $ git clone https://github.com/hendrix-lehman/cmp431.git
 $ cd cmp431/AssignmentProjects/ArtSpace
 ```
+
 Alternatively you can download the repository as a zip file, unzip it, and open it in Android Studio.
 
 [Download Here](https://github.com/hendrix-lehman/cmp431/archive/refs/heads/main.zip)
 
 After unzipping the project zip file, please find the project directory here:
+
 ```
 $ cd cmp431-main/AssignmentProjects/ArtSpace 
 ```
 
-The code snippet below are located in the MainActivity.kt file
+The code snippet below are located in the MainActivity.kt file.
+
 
 | Home Page Code     | Artist Page Code       |
 |-----------------|--------------------|
