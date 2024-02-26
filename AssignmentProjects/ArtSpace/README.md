@@ -2,7 +2,7 @@
 
 ## Description
 
-The Art Space application showcase a curated collection of artwork from the [Artvee](https://artvee.com/).
+The Art Space application showcase a curated collection of artwork from the [Artvee](https://artvee.com/) website.
 
 Users of this application can navigate through the collection by selecting "Next" or "Previous" from the Home Page.
 
