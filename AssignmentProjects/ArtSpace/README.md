@@ -1,5 +1,30 @@
 # Project 1: Art Space
 
+
+## To be completed 
+
+Read the project description, layout details and complete the all TODO section using the information below.
+
+The download the code to complete your assignment, you can use these git commands:
+
+```
+$ git clone https://github.com/hendrix-lehman/cmp431.git
+$ cd cmp431/AssignmentProjects/ArtSpace
+```
+Alternatively you can download the repository as a zip file, unzip it, and open it in Android Studio.
+
+[Download Here](https://github.com/hendrix-lehman/cmp431/archive/refs/heads/main.zip)
+
+After unzipping the project zip file, please find the project directory here:
+```
+$ cd cmp431-main/AssignmentProjects/ArtSpace 
+```
+
+| Home Page Code     | Artist Page Code       |
+|-----------------|--------------------|
+| ![Home Page code](./assets/homepage-code.png) | ![Artist Page code](./assets/artistpage-code.png) |
+
+
 ## Description
 
 The Art Space application showcase a curated collection of artwork from the [Artvee](https://artvee.com/) website.
@@ -35,28 +60,5 @@ The Artist Page is broken down into smaller sections as follow:
 | Home Page       | Artist Page        |
 |-----------------|--------------------|
 | ![Home Page layout](./assets/homepage-layout.png) | ![Artist Page layout](./assets/artistpage-layout.png) |
-
-
-## To be completed 
-
-The download the code to complete your assignment, you can use these git commands:
-
-```
-$ git clone https://github.com/hendrix-lehman/cmp431.git
-$ cd cmp431/AssignmentProjects/ArtSpace
-```
-Alternatively you can download the repository as a zip file, unzip it, and open it in Android Studio.
-
-[Download Here](https://github.com/hendrix-lehman/cmp431/archive/refs/heads/main.zip)
-
-After unzipping the project zip file, please find the project directory here:
-```
-$ cd cmp431-main/AssignmentProjects/ArtSpace 
-```
-
-| Home Page Code     | Artist Page Code       |
-|-----------------|--------------------|
-| ![Home Page code](./assets/homepage-code.png) | ![Artist Page code](./assets/artistpage-code.png) |
-
 
 
