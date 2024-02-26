@@ -1,0 +1,86 @@
+<resources>
+    <string name="app_name">Art Space</string>
+    <!-- Vincent van Gogh -->
+    <string name="art_1_artist">Vincent van Gogh</string>
+    <string name="art_1_artist_info">(Dutch, 1853 – 1890)</string>
+    <string name="art_1_title">The Starry Night</string>
+    <string name="art_1_year">(1889)</string>
+    <string name="art_1_description">The Starry Night by Vincent van Gogh</string>
+    <string name="art_1_artist_bio">
+       Vincent Willem van Gogh was a Dutch post-impressionist painter who posthumously became one of the most famous and influential figures in the history of Western art. In a decade, he created about 2,100 artworks, including around 860 oil paintings, most of which date from the last two years of his life. They include landscapes, still lifes, portraits and self-portraits, and are characterised by bold colours and dramatic, impulsive and expressive brushwork that contributed to the foundations of modern art. He was not commercially successful, and his suicide at 37 came after years of mental illness, depression and poverty.\n\n
+
+Born into an upper-middle-class family, Van Gogh drew as a child and was serious, quiet, and thoughtful. As a young man he worked as an art dealer, often travelling, but became depressed after he was transferred to London. He turned to religion and spent time as a Protestant missionary in southern Belgium. He drifted in ill health and solitude before taking up painting in 1881, having moved back home with his parents. His younger brother Theo supported him financially, and the two kept a long correspondence by letter. His early works, mostly still lifes and depictions of peasant labourers, contain few signs of the vivid colour that distinguished his later work. In 1886, he moved to Paris, where he met members of the avant-garde, including Émile Bernard and Paul Gauguin, who were reacting against the Impressionist sensibility. As his work developed he created a new approach to still lifes and local landscapes. His paintings grew brighter in colour as he developed a style that became fully realised during his stay in Arles in the south of France in 1888. During this period he broadened his subject matter to include series of olive trees, wheat fields and sunflowers.\n\n
+
+Van Gogh suffered from psychotic episodes and delusions and though he worried about his mental stability, he often neglected his physical health, did not eat properly and drank heavily. His friendship with Gauguin ended after a confrontation with a razor when, in a rage, he severed part of his own left ear. He spent time in psychiatric hospitals, including a period at Saint-Rémy. After he discharged himself and moved to the Auberge Ravoux in Auvers-sur-Oise near Paris, he came under the care of the homeopathic doctor Paul Gachet. His depression continued and on 27 July 1890, Van Gogh shot himself in the chest with a Lefaucheux revolver. He died from his injuries two days later.\n\n
+
+Van Gogh was unsuccessful during his lifetime, and he was considered a madman and a failure. He became famous after his suicide and exists in the public imagination as a misunderstood genius, the artist \"where discourses on madness and creativity converge\". His reputation began to grow in the early 20th century as elements of his painting style came to be incorporated by the Fauves and German Expressionists. He attained widespread critical, commercial and popular success over the ensuing decades, and he is remembered as an important but tragic painter, whose troubled personality typifies the romantic ideal of the tortured artist. Today, Van Gogh\"s works are among the world\'s most expensive paintings to have ever sold, and his legacy is honoured by a museum in his name, the Van Gogh Museum in Amsterdam, which holds the world\'s largest collection of his paintings and drawings.\n\n
+    </string>
+
+    <!-- Perkins Harnly -->
+    <string name="art_2_artist">Perkins Harnly</string>
+    <string name="art_2_artist_info">(American, 1901 – 1986)</string>
+    <string name="art_2_title">Pool Room</string>
+    <string name="art_2_year">(1942)</string>
+    <string name="art_2_description">Pool Room by Perkins Harnly</string>
+    <string name="art_2_artist_bio">
+       Perkins Harnly was an artist with the Federal Art Project\'s Index of American Design. He was born in Ogallala, Nebraska, and traveled to Los Angeles in 1922 and to New York in 1928, where he began painting the watercolors of Victorian interiors that were typical of the work for which he is best known.\n\n
+
+Harnly\'s first gallery show was at the Julien Levy Gallery in 1933, with artists Joseph Cornell, Toulouse-Lautrec, and Harry Brown. He began working for the FAP in December, 1935, and then the Index of American Design in 1938. The works in the Index were given by the Federal government to the National Gallery of Art. After the end of the Federal Art Project, the Metropolitan Museum of Art in 1942 mounted an exhibition called I Remember That, composed of works from the Index of American Design with several paintings by Harnly. After seeing his works in this exhibit the film producer Albert Lewin invited Harnly to Hollywood and gave him various assignments, which included set designs for the film The Picture of Dorian Gray. Lewin later commissioned Harnly to supplement his work with the Index by creating additional paintings, which were then given by Lewin to the National Gallery of Art.\n\n
+
+The National Museum of American Art (now the Smithsonian American Art Museum) presented a solo exhibition of Harnly\'s work from October 16, 1981 to February 15, 1982.\n\n
+
+A biography, The Emphatically Queer Career of Artist Perkins Harnly and His Bohemian Friends by Sarah Burns was published by Feral House books in 2021.\n\n
+    </string>
+
+    <!-- Joaquin Torres Garcia -->
+    <string name="art_3_artist">Joaquín Torres García</string>
+    <string name="art_3_artist_info">(Uruguayan, 1874 – 1949)</string>
+    <string name="art_3_title">New York Street Scene</string>
+    <string name="art_3_year">(1920)</string>
+    <string name="art_3_description">New York Street Scene by Joaquín Torres García</string>
+    <string name="art_3_artist_bio">
+       Joaquín Torres García was an Uruguayan/Spanish artist. He was born in Montevideo, Uruguay on July 28, 1874. As an adolescent he emigrated to Catalunya, Spain,where he initiated his career as an artist in 1891. For the next three decades, he embraced Catalan identity leading Barcelona’s and Europe\'s art and culture to its utmost vanguards. A ‘renaissance or universal man’; painter, sculptor, muralist, novelist, writer, teacher and theorist. He was also active in United States, Italy, France and Uruguay from where his influence encompasses a personal presence in European, North American and South American modern art. He dealt the eternal dilemma between the old and the modern, the classical and the avant-garde, reason and feeling, figuration and abstraction with a simple and brilliant metaphor: there is no contradiction or incompatibility. Like Goethe, he seeks the integration between classicism and modernity.\n\n
+
+He is known for his collaboration with Gaudi in 1903 on the stained glass windows for the Palma Cathedral and the Sagrada Família. He decorated with monumental frescoes the medieval Palau de la Generalitat seat of the Catalan government. His art is associated with archaic universal cultures; Mediterranean cultural traditions, Noucentisme, and Modern Classicism. He developed a unique style first described as ‘Art Constructif’ while living in Paris’ 1930\'s. Arte Constructivo (Constructive Art), a school he opened in Madrid, will be continued as Universalismo Constructivo (Universal Constructivism), a treaty he published in South-America while teaching through his workshop schools “Asociación de Arte Constructivo” (Constructive Art Association) and ‘El Taller Torres-Garcia’. A unique style encompassing classic/archaic traditions with XX century\'s isms: Cubism, Dada, Neo plasticism, Primitivisme, Surrealism, Abstraction.\n\n
+
+As a theoretician he published more than one hundred and fifty books, essays and articles written in Catalan, Spanish, French, English. In his lifetime he gave more than 500 lectures. An indefatigable teacher, Torres founded several art schools in Spain and Montevideo and numerous art groups including the first European abstract art group and magazine Cercle et Carré (circle and square) in Paris in 1929.\n\n
+
+Retrospectives in Paris in 1955 and Amsterdam in 1961 are the earliest to document historically the place of Torres-García in the currents of abstract art. In the United States he exhibited in New York\'s 1920s when the Whitney Studio Club, The Society of Independent artists and the Societe Anonyme were giving their first steps. In the 1930s Albert Eugene Gallatin exhibited his work in the Museum of Living Art with Modern masters; Picasso, Georges Braque, Henri Matisse, Fernand Léger, etc. The Museum of Modern Art opened its Latin American collection exhibition in the 1940s with the acquisition of his works. perspective.\n\n
+    </string>
+
+    <!-- Johannes Vermeer -->
+    <string name="art_4_artist">Johannes Vermeer</string>
+    <string name="art_4_artist_info">(Dutch, 1632 – 1675)</string>
+    <string name="art_4_title">Girl with a Pearl Earring</string>
+    <string name="art_4_year">(1665)</string>
+    <string name="art_4_description">Girl with a Pearl Earring by Johannes Vermeer</string>
+    <string name="art_4_artist_bio">
+        Johannes Vermeer was a Dutch Baroque Period painter who specialized in domestic interior scenes of middle class life. During his lifetime, he was a moderately successful provincial genre painter, recognized in Delft and The Hague. Nonetheless, he produced relatively few paintings and evidently was not wealthy, leaving his wife and children in debt at his death.\n\n
+
+Vermeer worked slowly and with great care, and frequently used very expensive pigments. He is particularly renowned for his masterly treatment and use of light in his work.\n\n
+
+\"Almost all his paintings,\" Hans Koningsberger wrote, \"are apparently set in two smallish rooms in his house in Delft; they show the same furniture and decorations in various arrangements and they often portray the same people, mostly women.\"\n\n
+
+His modest celebrity gave way to obscurity after his death. He was barely mentioned in Arnold Houbraken\'s major source book on 17th-century Dutch painting (Grand Theatre of Dutch Painters and Women Artists) and was thus omitted from subsequent surveys of Dutch art for nearly two centuries. In the 19th century, Vermeer was rediscovered by Gustav Friedrich Waagen and Théophile Thoré-Bürger, who published an essay attributing 66 pictures to him, although only 34 paintings are universally attributed to him today. Since that time, Vermeer\'s reputation has grown, and he is now acknowledged as one of the greatest painters of the Dutch Golden Age.\n\n
+    </string>
+
+    <!-- Leonardo da Vinci -->
+    <string name="art_5_artist">Leonardo da Vinci</string>
+    <string name="art_5_artist_info">(Italian, 1452 – 1519)</string>
+    <string name="art_5_title">Mona Lisa</string>
+    <string name="art_5_year">(1506)</string>
+    <string name="art_5_description">Mona Lisa by Leonardo da Vinci</string>
+    <string name="art_5_artist_bio">
+        Leonardo da Vinci was an Italian polymath of the High Renaissance who is widely considered one of the greatest painters of all time. The Mona Lisa is the most famous of his works and the most famous portrait ever made. The Last Supper is the most reproduced religious painting of all time and his Vitruvian Man drawing is also regarded as a cultural icon. He is also known for his notebooks, in which he made drawings and notes on science and invention; these involve a variety of subjects including anatomy, cartography, painting, and palaeontology. Leonardo\'s collective works compose a contribution to later generations of artists rivalled only by that of his contemporary Michelangelo.\n\n
+
+Properly named Leonardo di ser Piero da Vinci, Leonardo was born out of wedlock to a notary, Piero da Vinci, and a peasant woman, Caterina, in Vinci, in the region of Florence, Italy. Leonardo was educated in the studio of the renowned Italian painter Andrea del Verrocchio. Much of his earlier working life was spent in the service of Ludovico il Moro in Milan, and he later worked in Rome, Bologna and Venice. He spent his last three years in France, where he died in 1519.\n\n
+
+Although he had no formal academic training, many historians and scholars regard Leonardo as the prime exemplar of the \"Renaissance Man\" or \"Universal Genius\", an individual of \"unquenchable curiosity\" and \"feverishly inventive imagination.\" He is widely considered one of the most diversely talented individuals ever to have lived. According to art historian Helen Gardner, the scope and depth of his interests were without precedent in recorded history, and \"his mind and personality seem to us superhuman, while the man himself mysterious and remote.\" Scholars interpret his view of the world as being based in logic, though the empirical methods he used were unorthodox for his time.\n\n
+
+Leonardo is revered for his technological ingenuity. He conceptualized flying machines, a type of armoured fighting vehicle, concentrated solar power, an adding machine, and the double hull. Relatively few of his designs were constructed or even feasible during his lifetime, as the modern scientific approaches to metallurgy and engineering were only in their infancy during the Renaissance. Some of his smaller inventions, however, entered the world of manufacturing unheralded, such as an automated bobbin winder and a machine for testing the tensile strength of wire. He is also sometimes credited with the inventions of the parachute, helicopter, and tank. He made substantial discoveries in anatomy, civil engineering, geology, optics, and hydrodynamics, but he did not publish his findings and they had little to no direct influence on subsequent science.\n\n
+    </string>
+
+    <string name="previous">Previous</string>
+    <string name="next">Next</string>
+    <string name="back">Back</string>
+</resources>
