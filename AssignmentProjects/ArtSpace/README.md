@@ -5,8 +5,13 @@ The project description goes here.
 
 | Home Page       |       Artist Page  (top)      |      Artist Page (bottom) |
 |-----------------|-------------------------------|------------------------|
-| ![Home Page image](./assets/homepage.png){height=250px} | ![Artist Page top](./assets/artistpage-1.png){height=250px} | ![Artist Page top](./assets/artistpage-2.png){height=250px} |
+| ![Home Page image](./assets/homepage.png) | ![Artist Page top](./assets/artistpage-1.png) | ![Artist Page top](./assets/artistpage-2.png) |
 
+<style type="text/css">
+    img {
+        width: 250px;
+    }
+</style>
 ## Layout
 
 ### Home Page
