@@ -3,7 +3,7 @@ author: Hendrix Tavarez
 fontfamily: helvet
 geometry: margin=2cm
 linkcolor: PineGreen
-header-includes: |
+header-includes:
 \hypersetup{
     colorlinks=true,
     urlcolor=PineGreen,
