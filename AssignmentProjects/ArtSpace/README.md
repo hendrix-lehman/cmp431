@@ -1,28 +1,25 @@
 ---
-author: Hendrix Tavarez 
+author: Hendrix Tavarez
 fontfamily: helvet
 geometry: margin=2cm
 linkcolor: PineGreen
 header-includes: |
-	\hypersetup{
-      colorlinks=true,
-	    urlcolor=PineGreen,
-	    citecolor=PineGreen,
-	}
-  \usepackage{fancyhdr}
-	\usepackage{caption}
-	\captionsetup[figure]{
-      name=,
-      labelsep=none,
-      labelformat=empty}
-	\pagestyle{empty}
-    \pagestyle{fancy}
-    \fancyhead[LE,RO]{Your cool-looking name}
-	\fancyhead[LO,RE]{\it Report title}
-    \fancyfoot[LE,RO]{\thepage}
-	\fancyfoot[C]{}
-	\renewcommand{\familydefault}{\sfdefault}
+\hypersetup{
+    colorlinks=true,
+    urlcolor=PineGreen,
+    citecolor=PineGreen,
+}
+\usepackage{fancyhdr}
+\usepackage{caption}
+\captionsetup[figure]{
+    name=,
+    labelsep=none,
+    labelformat=empty
+}
+\pagestyle{empty}
+\pagestyle{fancy}
 ---
+
 # Project 1: Art Space
 
 
