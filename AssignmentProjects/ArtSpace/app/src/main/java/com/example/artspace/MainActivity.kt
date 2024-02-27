@@ -3,7 +3,9 @@ package com.example.artspace
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
+import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
+import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
@@ -81,7 +83,7 @@ fun ArtistPage(navController: NavController) {
   // DO NOT MODIFY THE FOLLOWING CODE
   // You can use the following code to navigate to the previous screen:
   // ARTIST PAGE section C
-  // TODO: 3 (optional) place the code below in the proper Row or Column layout
+  // TODO: 3 place the code below in the proper Row or Column layout
   Button(onClick = {
     navController.navigate(Screen.Home.route + "/$id")
   }) {
@@ -100,14 +102,20 @@ fun ArtWall(
 
   // HOME PAGE section A
 
-  // TODO: 1. Add image of artwork
+  // TODO: 4. Add image of artwork
 
-  // TODO: 2. Add a click listener to navigate to the artist page
+  // TODO: 5. Add a click listener to navigate to the artist page
   // to navigate to the artist page, use the following code:
   // navController.navigate(Screen.Artist.route + "/$artistId")
+  // see example below.
 
   // <--- Safely REMOVE the following code and ADD your code here --->
-  Text(text = "(A) Display Artwork Image here as per the design")
+  Box(modifier = Modifier
+    .clickable {
+      navController.navigate(Screen.Artist.route + "/$artistId")
+    }) {
+    Text(text = "(A) Display Artwork Image here as per the design")
+  }
 }
 
 @Composable
@@ -115,9 +123,9 @@ fun ArtDescriptor(artTitleId: Int, artistId: Int, artYearId: Int) {
 
   // HOME PAGE section B
 
-  // TODO: 1. Add title of artwork
+  // TODO: 6. Add title of artwork
 
-  // TODO: 2. Add artist name and year of artwork
+  // TODO: 7. Add artist name and year of artwork
 
   // <--- Safely REMOVE the following code and ADD your code here --->
   Text(text = "(B) Display Artwork Title, Artist Name and Year here as per the design")
@@ -129,9 +137,9 @@ fun DisplayController(current: Int, move: (Int) -> Unit) {
 
   // HOME PAGE section C
 
-  // TODO: 1. Add a button to navigate to the previous artwork
+  // TODO: 9. Add a button to navigate to the previous artwork
 
-  // TODO: 2. Add a button to navigate to the next artwork
+  // TODO: 10. Add a button to navigate to the next artwork
 
   // NOTE: 
   // The buttons should be disabled if there is no previous or next artwork to navigate to
