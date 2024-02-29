@@ -67,23 +67,12 @@ class MainActivity : ComponentActivity() {
 }
 
 @Composable
-fun ArtistProfile(imageId: Int, nameId: Int, info: Int) {
-  // write code to display the artist profile
-
-//  Image(painter = painterResource(id = imageId), contentDescription = stringResource(id = nameId))
-  Text(text = stringResource(id = nameId))
-
-
-}
-
-@Composable
 fun ArtistPage(navController: NavController) {
   val id = navController.currentBackStackEntry?.arguments?.getInt("id") ?: 0
   val art = DataSource.arts[id]
 
   // ARTIST PAGE section A
   // TODO: 1. Artist Profile including image, name, and info (birthplace, and years alive)
-  ArtistProfile(imageId = art.artistImageId, nameId = art.artistId, info = art.artistInfoId)
 
   // ARTIST PAGE section B
   // TODO: 2  Artist bio
