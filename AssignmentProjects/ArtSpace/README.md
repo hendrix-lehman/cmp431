@@ -40,6 +40,8 @@ Alternatively you can download the repository as a zip file, unzip it, and open 
 
 [Download Here](https://github.com/hendrix-lehman/cmp431/archive/refs/heads/main.zip)
 
+[Download Instructions](./assets/downloand_instructions.pdf)
+
 After unzipping the project zip file, please find the project directory here:
 
 ```
