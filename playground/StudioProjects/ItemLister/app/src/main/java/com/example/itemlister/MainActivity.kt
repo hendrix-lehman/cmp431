@@ -1,6 +1,7 @@
 package com.example.itemlister
 
 import android.os.Bundle
+import android.util.Log
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.compose.foundation.layout.Column
@@ -18,9 +19,16 @@ import androidx.compose.ui.graphics.Color.Companion.Blue
 import androidx.compose.ui.tooling.preview.Preview
 import com.example.itemlister.ui.theme.ItemListerTheme
 
+
 class MainActivity : ComponentActivity() {
+
+  val TAG = "MainActivity"
+
+
   override fun onCreate(savedInstanceState: Bundle?) {
     super.onCreate(savedInstanceState)
+    println("ON CREATE")
+    Log.d(TAG, "OnCreate started")
     setContent {
       ItemListerTheme {
         // A surface container using the 'background' color from the theme
@@ -30,6 +38,31 @@ class MainActivity : ComponentActivity() {
         }
       }
     }
+  }
+
+  override fun onStart() {
+    super.onStart()
+    println("ON START")
+  }
+
+  override fun onResume() {
+    super.onResume()
+    println("ON RESUME")
+  }
+
+  override fun onPause() {
+    super.onPause()
+    println("ON PAUSE")
+  }
+
+  override fun onStop() {
+    super.onStop()
+    println("ON STOP")
+  }
+
+  override fun onDestroy() {
+    super.onDestroy()
+    println("ON DESTROY")
   }
 }
 
@@ -44,6 +77,10 @@ fun FancyNumber(modifier: Modifier, number: Int) {
 
 @Composable
 fun NumberList(modifier: Modifier = Modifier) {
+  // bad practice
+  // we are doing logic work here BUT,
+  // this is user interface (UI) related stuff
+  // not a good separation of concerns
   val numbers = (1..100000).toList()
 
   LazyColumn {
