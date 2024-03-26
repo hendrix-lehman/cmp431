@@ -4,7 +4,6 @@ import android.os.Bundle
 import android.util.Log
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
-import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
@@ -14,21 +13,15 @@ import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.Color.Companion.Blue
 import androidx.compose.ui.tooling.preview.Preview
 import com.example.itemlister.ui.theme.ItemListerTheme
 
+const val TAG = "MY MAIN ACTIVITY"
 
 class MainActivity : ComponentActivity() {
-
-  val TAG = "MainActivity"
-
-
   override fun onCreate(savedInstanceState: Bundle?) {
     super.onCreate(savedInstanceState)
-    println("ON CREATE")
-    Log.d(TAG, "OnCreate started")
+    Log.i(TAG, "OnCreate started")
     setContent {
       ItemListerTheme {
         // A surface container using the 'background' color from the theme
@@ -42,32 +35,33 @@ class MainActivity : ComponentActivity() {
 
   override fun onStart() {
     super.onStart()
-    println("ON START")
+    Log.i(TAG, "OnStart called.")
   }
 
   override fun onResume() {
     super.onResume()
-    println("ON RESUME")
+    Log.i(TAG, "OnResume called.")
   }
 
   override fun onPause() {
     super.onPause()
-    println("ON PAUSE")
+    Log.i(TAG, "OnPause called.")
   }
 
   override fun onStop() {
     super.onStop()
-    println("ON STOP")
+    Log.i(TAG, "OnStop called.")
   }
 
   override fun onDestroy() {
     super.onDestroy()
-    println("ON DESTROY")
+    Log.i(TAG, "OnDestroy called.")
   }
 }
 
 @Composable
 fun FancyNumber(modifier: Modifier, number: Int) {
+  Log.d(TAG, "the parameter number is equal to $number")
   Card(
     modifier = modifier
   ) {
@@ -82,6 +76,10 @@ fun NumberList(modifier: Modifier = Modifier) {
   // this is user interface (UI) related stuff
   // not a good separation of concerns
   val numbers = (1..100000).toList()
+  Log.d(TAG, "listing ${numbers.size} numbers")
+
+  if (numbers.size > 1000)
+    Log.w(TAG, "numbers (${numbers.size}) is greater than 1,000")
 
   LazyColumn {
     items(numbers) { number ->
