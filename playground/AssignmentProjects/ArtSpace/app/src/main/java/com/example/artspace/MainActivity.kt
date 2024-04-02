@@ -3,7 +3,6 @@ package com.example.artspace
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
-import androidx.compose.foundation.Image
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
@@ -13,7 +12,6 @@ import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
-import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.material3.Button
 import androidx.compose.material3.CenterAlignedTopAppBar
 import androidx.compose.material3.ExperimentalMaterial3Api
@@ -24,20 +22,12 @@ import androidx.compose.material3.TopAppBarDefaults
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableIntStateOf
-import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
-import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.draw.clip
-import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.dimensionResource
-import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
-import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
-import androidx.compose.ui.unit.dp
-import androidx.compose.ui.unit.sp
 import androidx.navigation.NavController
 import androidx.navigation.NavType
 import androidx.navigation.compose.NavHost
@@ -46,7 +36,6 @@ import androidx.navigation.compose.rememberNavController
 import androidx.navigation.navArgument
 import com.example.artspace.data.DataSource
 import com.example.artspace.ui.theme.ArtSpaceTheme
-
 
 class MainActivity : ComponentActivity() {
   override fun onCreate(savedInstanceState: Bundle?) {
@@ -78,46 +67,15 @@ class MainActivity : ComponentActivity() {
 }
 
 @Composable
-fun ArtistProfile(imageId: Int, nameId: Int, infoId: Int) {
-  Column {
-    Image(
-      modifier = Modifier
-        .clip(CircleShape)
-        .size(24.dp),
-      contentScale = ContentScale.Crop,
-      painter = painterResource(id = imageId),
-      contentDescription = stringResource(id = nameId)
-    )
-
-  }
-  Text(text = stringResource(id = nameId))
-  Text(text = stringResource(id = infoId))
-}
-
-@Composable
-fun ArtistBio(artistBio: Int) {
-  Column {
-    Text(
-      text = stringResource(id = artistBio), fontSize = 10.sp, modifier = Modifier
-        .padding(40.dp)
-        .align(alignment = Alignment.Start)
-    )
-  }
-
-}
-
-
-@Composable
 fun ArtistPage(navController: NavController) {
   val id = navController.currentBackStackEntry?.arguments?.getInt("id") ?: 0
   val art = DataSource.arts[id]
 
   // ARTIST PAGE section A
   // TODO: 1. Artist Profile including image, name, and info (birthplace, and years alive)
-  ArtistProfile(imageId = art.artistImageId, nameId = art.artistId, infoId = art.artistInfoId)
+
   // ARTIST PAGE section B
   // TODO: 2  Artist bio
-  ArtistBio(artistBio = art.artistBioId)
 
   // <--- Safely REMOVE the following code and ADD your code here --->
 //  Text(text = "(D) Display Artist Profile and Bio here as per the design")
@@ -126,12 +84,10 @@ fun ArtistPage(navController: NavController) {
   // You can use the following code to navigate to the previous screen:
   // ARTIST PAGE section C
   // TODO: 3 place the code below in the proper Row or Column layout
-  Column(modifier = Modifier, verticalArrangement = Arrangement.Bottom) {
-    Button(onClick = {
-      navController.navigate(Screen.Home.route + "/$id")
-    }) {
-      Text(text = stringResource(id = R.string.back))
-    }
+  Button(onClick = {
+    navController.navigate(Screen.Home.route + "/$id")
+  }) {
+    Text(text = stringResource(id = R.string.back))
   }
 }
 
@@ -147,21 +103,6 @@ fun ArtWall(
   // HOME PAGE section A
 
   // TODO: 4. Add image of artwork
-  // var artResult by remember{(mutableStateOf(1))}
-
-  var artResult by remember { (mutableStateOf(1)) }
-  val artImageResource = when (artResult) {
-    1 -> R.drawable.art_1_the_starry_night
-    2 -> R.drawable.art_2_pool_room
-    3 -> R.drawable.art_3_new_york_street_scene
-    4 -> R.drawable.art_4_girl_with_a_pearl_earing
-    5 -> R.drawable.art_5_mona_lisa
-
-    else -> R.drawable.art_1_the_starry_night
-  }
-
-  //Image(painter = painterResource(id = artImageResource), contentDescription =artResult.toString() )
-
 
   // TODO: 5. Add a click listener to navigate to the artist page
   // to navigate to the artist page, use the following code:
@@ -172,12 +113,7 @@ fun ArtWall(
   Box(modifier = Modifier.clickable {
     navController.navigate(Screen.Artist.route + "/$artistId")
   }) {
-    //Text(text = "(A) Display Artwork Image here as per the design" + artImageResource)
-    Image(
-      painter = painterResource(id = artImageResource),
-      contentDescription = artResult.toString()
-    )
-
+    Text(text = "(A) Display Artwork Image here as per the design")
   }
 }
 
@@ -187,35 +123,11 @@ fun ArtDescriptor(artTitleId: Int, artistId: Int, artYearId: Int) {
   // HOME PAGE section B
 
   // TODO: 6. Add title of artwork
-  Row {
-    Text(
-      text = stringResource(id = artTitleId), fontWeight = FontWeight.Bold,
-      fontSize = 19.sp,
-      modifier = Modifier
-        .padding(10.dp)
-        .align(alignment = Alignment.CenterVertically)
-    )
-  }
+
   // TODO: 7. Add artist name and year of artwork
-  Row {
-    Text(
-      text = stringResource(id = artistId),
-      fontSize = 17.sp,
-      modifier = Modifier
-        .padding(10.dp)
-        .align(alignment = Alignment.CenterVertically)
-    )
-    Text(
-      text = stringResource(id = artYearId),
-      fontSize = 17.sp,
-      modifier = Modifier
-        .padding(10.dp)
-        .align(alignment = Alignment.CenterVertically)
-    )
-  }
 
   // <--- Safely REMOVE the following code and ADD your code here --->
-  // Text(text = "(B) Display Artwork Title, Artist Name and Year here as per the design")
+  Text(text = "(B) Display Artwork Title, Artist Name and Year here as per the design")
 }
 
 
@@ -226,32 +138,7 @@ fun DisplayController(current: Int, move: (Int) -> Unit) {
 
   // TODO: 9. Add a button to navigate to the previous artwork
 
-  if (current != 0) {
-    Column {
-      Button(onClick = { current }) {
-
-        Text(stringResource(id = R.string.previous))
-        move(current - 1)
-
-      }
-
-    }
-  }
-
-
   // TODO: 10. Add a button to navigate to the next artwork
-  if (current <= 5) {
-    Column(modifier = Modifier, horizontalAlignment = Alignment.Start) {
-      Button(onClick = { current }) {
-
-        Text(stringResource(id = R.string.next))
-        move(current + 1)
-
-
-      }
-    }
-  }
-
 
   // NOTE:
   // The buttons should be disabled if there is no previous or next artwork to navigate to
@@ -263,7 +150,7 @@ fun DisplayController(current: Int, move: (Int) -> Unit) {
   // move(current + 1) // for the next button
 
   // <--- Safely REMOVE the following code and ADD your code here --->
-  // Text(text = "(C) Display buttons to navigate to the previous and next artwork here as per the design")
+  Text(text = "(C) Display buttons to navigate to the previous and next artwork here as per the design")
 
 }
 
