@@ -1,5 +1,7 @@
 package com.example.nycparks.data
 
+import android.util.Log
+import com.example.nycparks.util.TAG
 import com.example.nycparks.network.NycOpenDataApiService
 import com.jakewharton.retrofit2.converter.kotlinx.serialization.asConverterFactory
 import kotlinx.serialization.json.Json
@@ -31,6 +33,7 @@ class DefaultAppContainer : AppContainer {
    * Retrofit service object for creating api calls
    */
   private val retrofitService: NycOpenDataApiService by lazy {
+    Log.i(TAG, "retrofit service creating API calls")
     retrofit.create(NycOpenDataApiService::class.java)
   }
 
@@ -38,6 +41,7 @@ class DefaultAppContainer : AppContainer {
    * DI implementation for NYC Parks repository
    */
   override val nycParksRepository: NycParksRepository by lazy {
+    Log.i(TAG, "injecting retrofit service to network repository")
     NetworkNycParksRepository(retrofitService)
   }
 }

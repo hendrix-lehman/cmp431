@@ -9,7 +9,7 @@ data class NycPark(
   val url: String? = "",
   var address: String? = "",
   val borough: Char,
-  val zipcode: String,
+  val zipcode: String? = "",
   val location: String? = "",
   val permit: Boolean = false,
   val retired: Boolean = false,

@@ -1,3 +1,38 @@
 <resources>
     <string name="app_name">NYC Parks</string>
+
+    <string name="boroughs_title">NYC Parks by Borough</string>
+    <string name="borough_parks_title">%1$s Parks</string>
+
+    <string name="favorites">Favorites</string>
+    <string name="count">Count</string>
+    <string name="boroughs_interesting_fact">
+The Boroughs of New York City are the five major governmental districts that compose New York City. The boroughs are the Bronx, Brooklyn, Manhattan, Queens, and Staten Island. Each borough is coextensive with a respective county of the State of New York: The Bronx is Bronx County, Brooklyn is Kings County, Manhattan is New York County, Queens is Queens County, and Staten Island is Richmond County.
+    </string>
+
+    <string name="manhattan">Borough of Manhattan</string>
+    <string name="manhattan_settled_year">Year Settled: 1624</string>
+    <string name="manhattan_interesting_fact">
+Present-day Manhattan was originally part of Lenape territory. European settlement began with the establishment of a trading post by Dutch colonists in 1624 on lower Manhattan Island; the post was named New Amsterdam in 1626. The territory and its surroundings came under English control in 1664 and were renamed New York after King Charles II of England granted the lands to his brother, the Duke of York.
+    </string>
+    <string name="bronx">Borough of the Bronx</string>
+    <string name="bronx_settled_year">Year Settled: 1639</string>
+    <string name="bronx_interesting_fact">
+The Bronx was called Rananchqua by the native Siwanoy band of Lenape (also known historically as the Delawares), while other Native Americans knew the Bronx as Keskeskeck. It was divided by the Aquahung River (now known in English as the Bronx River). The Bronx was named after Jonas Bronck (c.1600–1643), a European settler whose precise origins are disputed. Bronck became the first recorded European settler in the present-day Bronx and built a farm named "Emmaus" close to what today is the corner of Willis Avenue and 132nd Street in Mott Haven.
+    </string>
+    <string name="queens">Borough of the Queens</string>
+    <string name="queens_settled_year">Year Settled: 1683</string>
+    <string name="queens_interesting_fact">
+If Queens were its own city, it would be the fourth most-populous in the U.S. after New York City itself, Los Angeles, and Chicago. Queens is the fourth-most densely populated borough in New York City and the fourth-most densely populated U.S. county. About 47% of its residents are foreign-born. Queens is the most linguistically and ethnically diverse place on Earth.
+    </string>
+    <string name="brooklyn">Borough of the Brooklyn</string>
+    <string name="brooklyn_settled_year">Year Settled: 1634</string>
+    <string name="brooklyn_interesting_fact">
+The Dutch were the first Europeans to settle Long Island\'s western edge, which was then largely inhabited by the Lenape, an Algonquian-speaking American Indian tribe often referred to in European documents by a variation of the place name "Canarsie". Bands were associated with place names, but the colonists thought their names represented different tribes. The Breuckelen settlement was named after Breukelen in the Netherlands; it was part of New Netherland.
+    </string>
+    <string name="staten_island">Borough of the Staten Island</string>
+    <string name="staten_island_settled_year">Year Settled: 1661</string>
+    <string name="staten_island_interesting_fact">
+A home to the Lenape indigenous people, the island was settled by Dutch colonists in the 17th century. It was one of the 12 original counties of New York state. Staten Island was consolidated with New York City in 1898. It was formerly known as the Borough of Richmond until 1975, when its name was changed to Borough of Staten Island. The first recorded European contact on the island was in 1524 by Italian explorer Giovanni da Verrazzano who sailed through The Narrows on the ship La Dauphine and anchored for one night.
+    </string>
 </resources>
